@@ -25,7 +25,10 @@ h1, h2, p {
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+}
+
+h1 {
+    font-size: 40px;
 }
 nav {
     width: 80%;
@@ -67,11 +70,14 @@ header {
 
 }
 #glowny {
-    padding-top: 200px;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    overflow: hidden;
     margin: auto;
-    width: 80%;
-    height: 1000px;
+    width: 72%;
     background-color: black;
+    text-align: center;
 
 }
 
@@ -102,7 +108,7 @@ nav a.active {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    animation: animate 2s linear infinite;
+
 }
 
 #doglownej:hover
@@ -123,6 +129,14 @@ nav a.active {
     font-size: 18px;
 }
 
+p.cytat
+{
+    font-size: 40px;
+    color: white;
+    line-height: 20px;
+    font-style: italic;
+
+}
 
 
 #przycisk {
@@ -162,7 +176,6 @@ button:hover, a:hover {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #111; /* Black*/

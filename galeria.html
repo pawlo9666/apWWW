@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria Tekken FGC</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="galeria.css"/>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+
+        }
+
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="turnieje.html">Turnieje</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a class="active" href="galeria.html">Galeria</a>
+    <img id="avatar" src="ja.jpg" alt="Moje zdjęcie profilowe" onclick="openNav()">
+</nav>
+
+<header>
+    <section id="obraz" >
+        <article id="obraztekst">
+            <p class="logo"> Tekken 7 </p>
+            <p class="cytat">&Prime;All fights are personal&Prime;</p>
+            <a href="#glowny" class="doglownej">Menu</a>
+        </article>
+    </section>
+</header>
+<section id="glowny">
+
+    <h1> Galeria Zdjęć </h1>
+
+    <section class="galeria">
+
+    <section class="row">
+        <article class="column">
+            <img src="obr/gal1.jpg" class="galeria" alt="Nature" onclick="myFunction(this);">
+        </article>
+        <article class="column">
+            <img src="obr/gal2.jpg" class="galeria" alt="Snow" onclick="myFunction(this);">
+        </article>
+        <article class="column">
+            <img src="obr/gal3.jpg" class="galeria" alt="Mountains" onclick="myFunction(this);">
+        </article>
+
+    </section>
+
+    <section class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg" />
+
+        <!-- Image text -->
+        <article id="imgtext"></article>
+    </section>
+
+        <section class="cool">
+        <article class="column2">
+            <img src="obr/gal4.jpg" class="galeria" alt="Lights" onclick="myFunction(this);">
+        </article>
+        <article class="column2">
+            <img src="obr/gal5.jpg" class="galeria" alt="Lights" onclick="myFunction(this);">
+        </article>
+        <article class="column2">
+            <img src="obr/gal6.jpg" class="galeria" alt="Lights" onclick="myFunction(this);">
+        </article>
+        </section>
+    </section>
+
+
+
+
+</section>
+
+<aside id="mySidenav" class="sidenav">
+
+    <article id="card">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="ja.jpg" alt="Moje zdjęcie profilowe" style="width:100%">
+        <h2>Paweł Skiba</h2>
+        <p class="title">Administrator</p>
+        <p>Uniwersytet Warmińsko-Mazurski</p>
+
+        <a href="kontakt.html" id="przycisk">Kontakt</a>
+    </article>
+</aside>
+
+<footer>
+    <a class="doglownej"  href="#glowny">Menu</a>
+    <p>&copy; 2019 Paweł Skiba. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
