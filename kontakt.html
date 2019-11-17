@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Tekken FGC</title>
+    <title>Kontakt Tekken FGC</title>
     <link rel="stylesheet" href="kontakt.css"/>
     <link rel="stylesheet" href="style.css"/>
 
@@ -27,7 +27,7 @@
 
 <nav>
     <a  href="index.html">Home</a>
-    <a href="turnieje.html">Turnieje</a>
+    <a href="tur.html">Turnieje</a>
     <a  class="active" href="kontakt.html">Kontakt</a>
     <a  href="galeria.html">Galeria</a>
     <img id="avatar" src="ja.jpg" alt="Moje zdjęcie profilowe" onclick="openNav()">
@@ -42,6 +42,9 @@
         </article>
     </section>
 </header>
+<section id="okruszki">
+    <text> Tutaj jesteś: </text> <a class="okruszek" href="index.html">Home</a> <text> > </text> <a class="okruszek" href="kontakt.html">Kontakt </a>
+</section>
 <section id="glowny">
         <section id="informacje">
         <h2> Strona poświęcona grze Tekken 7 </h2>
@@ -50,10 +53,13 @@
 
 
         <section class="formularz">
-            <p> Masz jakieś pytania? Sugestie? Napisz: </p>
+
             <form action="mailto:pawlo9666@gmail.com" method="post" enctype="text/plain">
 
                 <table>
+                    <tr>
+                        <th> Masz jakieś pytania? Sugestie? Napisz:  </th>
+                    </tr>
                     <tr>
                         <td><label for="imie">Podaj swoje imie: </label> </td>
                         <td> <input placeholder="Podaj Imie" id="imie" type="text"> </td>

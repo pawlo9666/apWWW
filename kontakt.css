@@ -17,13 +17,15 @@
     color:white;
     background-color: #222222;
     line-height: 2;
-    font-family: "Berlin Sans FB";
+
 
 }
 
 table {
     margin: auto;
 }
+
+
 textarea {
     width: 50%;
     height: 300px;
@@ -72,5 +74,17 @@ input[type=submit]:hover , input[type=reset]:hover {
     background-color: white;
 }
 
+@media screen and (max-width: 1000px) {
+    textarea {
+        height: 200px;
+    }
+}
+@media screen and (min-width: 3000px) {
+    form {
+        font-size: 150%;
+    }
 
-
+    input[type=text], input[type=email], input[type=reset], input[type=submit] {
+        font-size: 150%;
+    }
+}
