@@ -28,8 +28,16 @@ h1, h2, p {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 300%;
 }
+
+@font-face
+{
+    font-family: Ackno;
+    src:url(Acknowledgement.otf);
+}
+
+
 nav {
     width: 80%;
     top: 0;
@@ -39,11 +47,16 @@ nav {
     overflow: hidden;
     z-index: 2;
 }
+
 header {
     width: 100%;
     margin: auto;
     overflow: hidden;
     z-index: 0;
+}
+
+.logo{
+    font-family:Ackno;
 }
 #obraz {
 
@@ -67,8 +80,15 @@ header {
     transform: translate(-50%, -50%);
     color: white;
     z-index:1;
+    font-size: 100%;
 
 }
+
+#obraztekst p {
+    font-size: 250%;
+}
+
+
 #glowny {
     padding-top: 4%;
     padding-left: 4%;
@@ -86,9 +106,13 @@ nav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 200%;
+    width: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+
 }
 nav a:hover {
     background-color: #ddd;
@@ -103,58 +127,79 @@ nav a.active {
     background-color: gray; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 100%;
+
 
 }
 
-#doglownej:hover
+.dostrony {
+    background-color: gray; /* Green */
+    border: none;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+}
+
+.dostrony:hover
+{
+    background-color: red;
+}
+
+.doglownej:hover
 {
     background-color: red;
 }
 
 #card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    width: 100%;
     margin: auto;
     text-align: center;
     color: white;
+    font-size: 140%;
+    line-height: 1;
+}
+
+.mojezdjecie {
+    width: 50%;
 }
 
 .title {
     color: grey;
-    font-size: 18px;
+    font-size: 100%;
 }
 
 p.cytat
 {
-    font-size: 40px;
+    font-size: 100%;
     color: white;
     line-height: 20px;
     font-style: italic;
 
 }
 
-
 #przycisk {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 8px;
     color: white;
     background-color: #000;
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 18px;
+    font-size: 100%;
+    padding: 5% 0 5% 0;
 }
 
 a {
     text-decoration: none;
-    font-size: 22px;
     color: black;
 }
 footer {
@@ -189,19 +234,98 @@ button:hover, a:hover {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
     margin-left: 50px;
     color:white;
 }
 
 #avatar {
+    margin: auto;
     border-radius: 50%;
-    max-width: 45px;
+    width: 5%;
     float: right;
+
 }
 
+.fa {
+    color:white;
+    padding: 2%;
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav a {font-size: 50%;}
 }
+
+.nawigacyjny {
+    width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        width: 100%;
+        position: relative;
+        font-size: 50%;
+    }
+    #obraz {
+        height: 400px;
+        width: 100%;
+        font-size: 60%;
+    }
+    #glowny {
+        width: 100%;
+        padding: 0%;
+
+    }
+    footer {
+        width: 100%;
+    }
+    #card {
+        font-size: 90%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 3000px) {
+    nav {
+        font-size: 250%;
+    }
+
+    #obraz {
+            font-size: 250%;
+    }
+    #glowny {
+       font-size: 250%;
+    }
+
+    footer {
+        font-size: 300%;
+    }
+
+    #obraz {
+        height: 1600px;
+    }
+
+    #avaar {
+        max-width: 500px;
+    }
+
+    .doglownej {
+        font-size: 200%;
+    }
+
+    #card {
+        font-size: 400%;
+    }
+
+    #avatar {
+        width: 4%;
+    }
+
+
+
+
+}
+
+

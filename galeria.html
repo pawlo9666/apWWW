@@ -5,11 +5,11 @@
     <title>Galeria Tekken FGC</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="galeria.css"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         /* Set the width of the side navigation to 250px */
         function openNav() {
-            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("mySidenav").style.width = "25%";
 
         }
 
@@ -52,7 +52,7 @@
         <article id="obraztekst">
             <p class="logo"> Tekken 7 </p>
             <p class="cytat">&Prime;All fights are personal&Prime;</p>
-            <a href="#glowny" class="doglownej">Menu</a>
+            <a href="#glowny" class="dostrony">Przejdź do strony</a>
         </article>
     </section>
 </header>
@@ -62,42 +62,38 @@
 
     <section class="galeria">
 
-    <section class="row">
-        <article class="column">
-            <img src="obr/gal1.jpg" class="galeria" alt="Nature" onclick="myFunction(this);">
-        </article>
-        <article class="column">
-            <img src="obr/gal2.jpg" class="galeria" alt="Snow" onclick="myFunction(this);">
-        </article>
-        <article class="column">
-            <img src="obr/gal3.jpg" class="galeria" alt="Mountains" onclick="myFunction(this);">
-        </article>
-
-    </section>
-
-    <section class="container">
-        <!-- Close the image -->
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-        <!-- Expanded image -->
-        <img id="expandedImg" />
-
-        <!-- Image text -->
-        <article id="imgtext"></article>
-    </section>
-
-        <section class="cool">
-        <article class="column2">
-            <img src="obr/gal4.jpg" class="galeria" alt="Lights" onclick="myFunction(this);">
-        </article>
-        <article class="column2">
-            <img src="obr/gal5.jpg" class="galeria" alt="Lights" onclick="myFunction(this);">
-        </article>
-        <article class="column2">
-            <img src="obr/gal6.jpg" class="galeria" alt="Lights" onclick="myFunction(this);">
-        </article>
+        <section class="rowleft">
+            <article class="column">
+                <img src="obr/gal1.jpg" class="galeria" alt="Nature" onclick="myFunction(this);">
+            </article>
+            <article class="column">
+                <img src="obr/gal2.jpg" class="galeria" alt="Snow" onclick="myFunction(this);">
+            </article>
+            <article class="column">
+                <img src="obr/gal3.jpg" class="galeria" alt="Mountains" onclick="myFunction(this);">
+            </article>
+            <article class="column">
+                <img src="obr/gal4.jpg" class="galeria" alt="Nature" onclick="myFunction(this);">
+            </article>
+            <article class="column">
+                <img src="obr/gal5.jpg" class="galeria" alt="Snow" onclick="myFunction(this);">
+            </article>
+            <article class="column">
+                <img src="obr/gal6.jpg" class="galeria" alt="Mountains" onclick="myFunction(this);">
+            </article>
         </section>
+
+         <section class="rowright">
+            <section class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" />
+                <article id="imgtext"></article>
+            </section>
+         </section>
+
+
     </section>
+
 
 
 
@@ -108,17 +104,18 @@
 
     <article id="card">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="ja.jpg" alt="Moje zdjęcie profilowe" style="width:100%">
+        <img class="mojezdjecie" src="ja.jpg" alt="Moje zdjęcie profilowe">
         <h2>Paweł Skiba</h2>
         <p class="title">Administrator</p>
         <p>Uniwersytet Warmińsko-Mazurski</p>
-
+        <a href=""><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="kontakt.html" id="przycisk">Kontakt</a>
     </article>
 </aside>
 
 <footer>
-    <a class="doglownej"  href="#glowny">Menu</a>
+    <a class="doglownej"  href="#glowny">Do góry</a>
     <p>&copy; 2019 Paweł Skiba. All rights reserved.</p>
 </footer>
 

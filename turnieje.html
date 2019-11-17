@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tekken FGC</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "25%";
+
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+
+        }
+    </script>
+
 </head>
+
 <body>
+
+<nav>
+    <a class="active" href="index.html">Home</a>
+    <a href="turnieje.html">Turnieje</a>
+    <a  href="kontakt.html">Kontakt</a>
+    <a  href="galeria.html">Galeria</a>
+    <img id="avatar" src="ja.jpg" alt="Moje zdjęcie profilowe" onclick="openNav()">
+</nav>
+
+<header>
+    <section id="obraz" >
+        <article id="obraztekst">
+            <p class="logo">Tekken 7</p>
+            <p class="cytat">&Prime;All fights are personal&Prime;</p>
+            <a href="#glowny" class="dostrony">Przejdź do strony</a>
+        </article>
+    </section>
+</header>
+<section id="glowny">
+
+    <h2> Strona informauje o zbliżających się eventach tekkena</h2>
+    <p> Nie wiem co tu napisać</p>
+
+    <a class="doglownej"  href="#glowny">Do góry</a>
+
+</section>
+
+<aside id="mySidenav" class="sidenav">
+
+    <article id="card">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img class="mojezdjecie" src="ja.jpg" alt="Moje zdjęcie profilowe">
+        <h2>Paweł Skiba</h2>
+        <p class="title">Administrator</p>
+        <p>Uniwersytet Warmińsko-Mazurski</p>
+        <a href=""><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="kontakt.html" id="przycisk">Kontakt</a>
+    </article>
+</aside>
+
+<footer>
+    <p>&copy; 2019 Paweł Skiba. All rights reserved.</p>
+</footer>
+
+
 
 </body>
 </html>
