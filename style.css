@@ -60,7 +60,7 @@ header {
 }
 #obraz {
 
-    background-image:linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),  url(t7.jpg);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),  url(obr/t7.jpg);
 
     height:800px;
     width:80%;
