@@ -5,33 +5,9 @@
     <title>Galeria Tekken FGC</title>
     <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="stylesheet" href="CSS/galeria.css"/>
+    <script src="JS/script.js"></script>
+    <script src="JS/galeria.js"></script>
 
-    <script>
-        /* Set the width of the side navigation to 250px */
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "25%";
-
-        }
-
-        /* Set the width of the side navigation to 0 */
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-
-        }
-
-        function myFunction(imgs) {
-            // Get the expanded image
-            var expandImg = document.getElementById("expandedImg");
-            // Get the image text
-            var imgText = document.getElementById("imgtext");
-            // Use the same src in the expanded image as the image being clicked on from the grid
-            expandImg.src = imgs.src;
-            // Use the value of the alt attribute of the clickable image as text inside the expanded image
-            imgText.innerHTML = imgs.alt;
-            // Show the container element (hidden with CSS)
-            expandImg.parentElement.style.display = "block";
-        }
-    </script>
 
 
 
