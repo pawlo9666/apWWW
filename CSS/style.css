@@ -42,11 +42,13 @@ nav {
     width: 80%;
     top: 0;
     position:sticky;
+    position: -webkit-sticky; /* Safari */
     margin:auto;
     background-color: black;
     overflow: hidden;
     z-index: 2;
 }
+nav:-ms-fullscreen, :root .ie11up  { position: relative; }
 
 header {
     width: 100%;
