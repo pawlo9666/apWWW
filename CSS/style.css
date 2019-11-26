@@ -186,6 +186,14 @@ p.cytat
 
 }
 
+.tresc p {
+    text-align: left;
+}
+
+#okruszki p {
+    text-align: left;
+}
+
 #przycisk {
     border: none;
     outline: 0;
@@ -259,6 +267,10 @@ button:hover, a:hover {
     padding-left: 5%;
 
 
+}
+
+.tresc { color: white;
+    text-align: left;
 }
 
 .okruszek {
